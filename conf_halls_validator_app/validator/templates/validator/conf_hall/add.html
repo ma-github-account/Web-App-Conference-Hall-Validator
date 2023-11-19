@@ -1,0 +1,31 @@
+{% extends "validator/base.html" %}
+{% load static %}
+
+{% block title %}
+	Add conf_hall
+{% endblock %}
+
+{% block content %}
+	<h3>Fill the form to add new conf_hall</h3>
+	<hr>
+	
+	<form action="" method="post">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit">
+		
+	</form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

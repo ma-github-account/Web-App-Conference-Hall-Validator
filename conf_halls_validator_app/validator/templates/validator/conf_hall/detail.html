@@ -1,0 +1,134 @@
+{% extends "validator/base.html" %}
+{% load static %}
+
+{% block title %}
+	Conference Hall Details
+{% endblock %}
+
+{% block content %}
+
+	<div class="conf_hall-detail">
+		<div class="record_data">
+		  <label id="hall_name_label">Hall Name: </label>
+		  <label id="hall_name">{{ conf_hall.hall_name }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="venue_label">Venue: </label>
+		  <label id="venue">{{ conf_hall.venue }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="city_label">City: </label>
+		  <label id="city">{{ conf_hall.city }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="hall_people_capacity_label">Hall people capacity: </label>
+		  <label id="hall_people_capacity">{{ conf_hall.hall_people_capacity }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="building_location_label">Building Location: </label>
+		  <label id="building_location">{{ conf_hall.building_location }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="city_label">City: </label>
+		  <label id="city">{{ conf_hall.city }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="building_standard_label">Building Standard: </label>
+		  <label id="building_standard">{{ conf_hall.building_standard }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="interior_styling_standard_label">Styling Standard: </label>
+		  <label id="interior_styling_standard">{{ conf_hall.interior_styling_standard }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="video_conferencing_facilities_standard_label">Facilities Standard: </label>
+		  <label id="video_conferencing_facilities_standard">{{ conf_hall.video_conferencing_facilities_standard }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="broadband_speed_label">Broadband Speed: </label>
+		  <label id="broadband_speed">{{ conf_hall.broadband_speed }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="international_airport_proximity_label">Internation Airport Proximity (km): </label>
+		  <label id="international_airport_proximity">{{ conf_hall.international_airport_proximity }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="minimum_lease_period_label">Minimal Lease Period: </label>
+		  <label id="minimum_lease_period">{{ conf_hall.minimum_lease_period }}</label>
+		  <small>Error message</small>
+		</div>
+		<div class="record_data">
+		  <label id="day_price_label">Day Price: </label>
+		  <label id="day_price">{{ conf_hall.day_price }}</label>
+		  <small>Error message</small>
+		</div>
+	</div>
+	<div class="validation_1">
+		<button type="button" id="international_conference_button" class="validation_button">International Conference Validation</button>
+		<button type="button" id="domestic_conference_button" class="validation_button">Domestic Conference Validation</button>	
+		<button type="button" id="reset_validation_button" class="reset_validation_button">Reset validation</button>
+	</div>
+	<script src="{% static 'javascript/conf_hall_validator.js' %}"></script>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

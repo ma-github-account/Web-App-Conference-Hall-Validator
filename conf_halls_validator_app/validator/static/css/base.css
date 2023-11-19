@@ -1,0 +1,232 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Ubuntu', sans-serif; font-weight:normal;
+}
+
+a {
+    text-decoration:none;
+    color:#5993bb;
+}
+
+a:hover {
+    color:#77b6e2;
+}
+
+a.button, input[type="submit"] {
+    color:#fff;
+    background:#5993bb;
+    border-radius:4px;
+    padding:10px 20px;
+    font-size:14px;
+    border:0;
+}
+
+a.button.light {
+    color:#666;
+    background:#ededed;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.text-right {
+    text-align:right;
+}
+
+table {
+    width:100%;
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align:left;
+    font-size:14px;
+    padding:10px;
+    margin:0;
+}
+
+tbody tr:nth-child(odd) {
+    background:#efefef;
+}
+
+tbody tr.subtotal {
+    background:#ccc;
+}
+
+thead th, tbody tr.total {
+    background:#5993bb;
+    color:#fff;
+    font-weight:bold;
+}
+
+table.cart {
+    margin-bottom:40px;
+}
+
+table.cart img {
+    width:180px;
+}
+
+tbody td.num {
+    text-align:right;
+}
+
+td input[type="submit"] {
+    font-size:12px;
+    padding:4px 10px;
+}
+
+form p label, form p input {
+    float:left;
+    clear:both;
+}
+
+form p label {
+    font-size:14px;
+    padding-bottom:4px;
+}
+
+form p input {
+    width:300px;
+    font-size:13px;
+    margin-bottom:10px;
+    padding:10px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
+
+
+
+.record_data.success input {
+  border-color: var(--success-color);
+}
+
+.record_data.error input {
+  border-color: var(--error-color);
+}
+
+
+
+.record_data small {
+  color: var(--error-color);
+  visibility: hidden;
+}
+
+.record_data.error small {
+  color: var(--error-color);
+  visibility: visible;
+}
+
+.record_data.success small {
+  color: var(--success-color);
+  visibility: visible;
+}
+
+.conf_hall-detail {
+  visibility: visible;
+  width:1200px;
+  font-size:18px;
+  margin-bottom:10px;
+  padding:10px 12px;
+  border:0;
+  background:#efefef;
+  color:#666;
+  border-radius:4px;
+}
+
+.validation_1 {
+  font-size:18px;
+  margin-bottom:10px;
+  padding:10px 12px;
+  border:0;
+  border-radius:4px;
+}
+
+
+
+.validation_button {
+  background-color: #8B8000; /* Yellow */
+  border: none;
+  color: white;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.reset_validation_button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+#base_header {
+  border: none;
+  color: black;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#list_title_h1 {
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding:10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

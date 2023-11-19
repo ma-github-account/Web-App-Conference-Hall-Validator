@@ -1,0 +1,97 @@
+{% extends "validator/base.html" %}
+{% load static %}
+
+{% block content %}
+	<div id="main" class="conf_hall-list">
+		<h1 id="list_title_h1">Conference Halls</h1>
+
+		<table id="list_table">
+			<tr>
+
+			  <th>Hall Name</th>
+			  <th>Venue</th>
+
+
+			  <th>City</th>
+			  <th>Hall People Capacity</th>
+			  <th>Building Location</th>
+			  <th>Building Standard</th>
+			  <th>Interior Styling Standard</th>
+			  <th>Video Conferencing Facilities Standard</th>
+			  <th>Broadband Speed</th>
+			  <th>International Airport Proximity</th>			  
+			  <th>Min Lease Period</th>
+			  <th>Day Price</th>
+
+
+
+
+			  <th>Link to details</th>			  
+
+			</tr>
+
+			{% for conf_hall in conf_halls %}
+
+			<tr>
+				<td>{{ conf_hall.hall_name }}</td>
+				<td>{{ conf_hall.venue }}</td>
+				<td>{{ conf_hall.city }}</td>
+				<td>{{ conf_hall.hall_people_capacity }}</td>
+				<td>{{ conf_hall.building_location }}</td>
+				<td>{{ conf_hall.building_standard }}</td>
+				<td>{{ conf_hall.interior_styling_standard }}</td>
+				<td>{{ conf_hall.video_conferencing_facilities_standard }}</td>
+				<td>{{ conf_hall.broadband_speed }}</td>
+				<td>{{ conf_hall.international_airport_proximity }}</td>
+				<td>{{ conf_hall.minimum_lease_period }}</td>
+				<td>{{ conf_hall.day_price }}</td>
+				<td><a href="{{ conf_hall.get_absolute_url }}">Conference Hall Details</a></td>
+			</tr>
+
+			{% endfor %}
+
+		</table>
+
+
+
+
+	</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
